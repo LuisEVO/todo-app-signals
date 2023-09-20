@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "description": "Crear proyecto",
+      "isComplete": true,
+      "id": 1
+    },
+    {
+      "description": "Agregar funcionalidad",
+      "isComplete": false,
+      "id": 2
+    },
+    {
+      "description": "Separar en componentes",
+      "isComplete": false,
+      "id": 3
+    },
+    {
+      "description": "Abstraer funcionalidad en un servicio",
+      "isComplete": false,
+      "id": 4
+    },
+    {
+      "description": "Separar en otro modulo",
+      "isComplete": true,
+      "id": 5
+    }
+  ]
+}
