@@ -11,7 +11,6 @@ export class TasksService {
   constructor() {
     effect(() => {
       console.log(`tasks has changed ${this.tasks()}`);
-
     })
   }
 
