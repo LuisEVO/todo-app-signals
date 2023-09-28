@@ -3,11 +3,11 @@ import { Task, TaskDTO } from './task.interface';
 import { TasksService } from './tasks.service';
 import { TasksHttp } from './tasks.http';
 import { tap } from 'rxjs';
-import { TasksSignalService } from './tasks-signal.service';
 
 @Component({
   selector: 'app-tasks',
   template: `
+    <h1>Total {{ total() }}</h1>
     <app-task-form (add)="add($event)"></app-task-form>
     <app-task-list
       [tasks]="tasks()"
@@ -32,9 +32,13 @@ export class TasksComponent implements OnInit {
     return this.tasksService.tasks;
   }
 
+  get total() {
+    return this.tasksService.total;
+  }
+
   constructor(
     private tasksHttp: TasksHttp,
-    private tasksService: TasksSignalService
+    private tasksService: TasksService
   ) {}
 
   ngOnInit(): void {

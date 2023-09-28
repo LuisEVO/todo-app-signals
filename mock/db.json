@@ -7,17 +7,17 @@
     },
     {
       "description": "Agregar funcionalidad",
-      "isComplete": false,
+      "isComplete": true,
       "id": 2
     },
     {
       "description": "Separar en componentes",
-      "isComplete": false,
+      "isComplete": true,
       "id": 3
     },
     {
       "description": "Abstraer funcionalidad en un servicio",
-      "isComplete": false,
+      "isComplete": true,
       "id": 4
     },
     {
